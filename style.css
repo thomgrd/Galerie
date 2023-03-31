@@ -39,13 +39,9 @@ body {
         align-items: center;
 }
 
-.header {
-    position: relative;
-    width: 100%; /* Prend toute la largeur de la page */
-    padding: 0px; /* Ajoute un padding à l'intérieur pour donner de l'espace au contenu */
-    z-index: -1; /* Ajoutez cette propriété pour placer les éléments en arrière-plan */
-}
-
+.header-popup {
+    display: none;
+  }
 
 .AT{
     margin-top: -100px;
@@ -174,6 +170,38 @@ body {
       font-size: 13px;
     }
 
+    .header-popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+      
+      .header-popup p {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 5px;
+      }
+      
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+      
+
     /* Media queries pour une mise en page réactive */
     @media (max-width: 1200px) {
         .peinture {
@@ -194,33 +222,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
 
-    .header-text {
-        font-size: 0.8rem; /* Ajustez la taille de police pour que le texte s'affiche correctement */
-        margin: 10px 0 30px; /* Ajustez les marges pour que le texte soit entièrement visible */
-        text-align: center;
-        width: 100%;
-        overflow: visible;
-    }
-
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 70px 0 10px;
-    }
-  
-    .header .AT,
-    .header .ATE {
-      position: static;
-      display: block;
-      text-align: center;
-      margin: 10px 0 30px; /* Ajustez la marge inférieure pour redescendre le texte */
-      width: 100%;
-    }
-  }
-  
 
   
   
