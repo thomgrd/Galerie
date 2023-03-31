@@ -109,8 +109,23 @@ body {
         position: relative; /* Ajouté pour positionner l'image par rapport à la box */
         padding-bottom: 2%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
         background-color: #eeeeee transparent;
-    }
+      }
 
+      .peinture {
+        /* ...autres styles... */
+        position: relative; /* Ajouté pour positionner la prévisualisation par rapport à la peinture */
+        overflow: hidden; /* Ajouté pour empêcher le débordement de la prévisualisation */
+      }
+
+    .preview {
+      display: none; /* Cache la prévisualisation par défaut */
+      position: absolute; /* Positionne la prévisualisation par rapport à la peinture */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
     .peinture p {
         margin-top: 0; /* Ajouté pour ajuster l'espace entre l'image et le texte à l'intérieur de la box */
         margin-bottom: 1px;
