@@ -28,6 +28,21 @@ body {
     font-family: 'Poppins';
     font-weight: 200;
   }
+
+  .AT{
+      position: flex;
+     align-content: right;
+     align-items: right;
+  }
+  .AT p {
+    position: flex;
+    align-items: right;
+    align-content: right;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-small;
+  }
   
   .galerie {
       display: flex;
@@ -38,7 +53,7 @@ body {
     }
     
     .peinture {
-        border: 0.5px solid black;
+        border: 0.5px solid #fff;
         padding: 5px;
         border-radius: 5px;
         text-align: center;
@@ -46,10 +61,15 @@ body {
         box-sizing: border-box;
         width: 70%;
         position: relative; /* Ajouté pour positionner l'image par rapport à la box */
-        padding-bottom: 10%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
-        margin-bottom: 2px;
-        background-color: #eeeeee;
+        padding-bottom: 2%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
+        background-color: #eeeeee transparent;
     }
+
+    .peinture p {
+        margin-top: 0; /* Ajouté pour ajuster l'espace entre l'image et le texte à l'intérieur de la box */
+        margin-bottom: 1px;
+    }
+    
     
   .peinture img {
     max-width: 100%;
