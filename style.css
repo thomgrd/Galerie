@@ -13,7 +13,7 @@ body {
     padding: 1px;
     margin-bottom: 0px; /* Ajoute une marge inférieure pour créer de l'espace entre le h2 et les éléments en dessous */
     box-sizing: border-box;
-    margin-top: -70px;
+    margin-top: -50px;
     text-align: center;
     background-color: #f1f1f1;
     padding: 2px;
@@ -21,7 +21,7 @@ body {
     font-weight: 200;
   }
   h2 p {
-    margin-top: -2px;
+    margin-top: 5px;
     font-family: 'Poppins';
     font-weight: 200;
     font-size: 14px;
@@ -35,74 +35,24 @@ body {
 
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        margin-top: -50px;
+        margin-bottom: -90px;
 }
- .head{
-    grid-area: header;
- }
-.header-popup {
-    display: none;
-  }
 
-.AT{
-    margin-top: -100px;
-    align-content: left;
-    text-align: left top;
-    border: 0.5px solid #fff transparent;
-    padding: 10px;
-    border-radius: 5px;
-    flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
-    box-sizing: content-box;
-    width: 30%;
-    position: relative ; /* Ajouté pour positionner l'image par rapport à la box */
-    padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
-    background-color: #fff transparent;
-    padding-top: 10px;
-}
-.AT p {
-    direction: ltr;
-    text-align: start;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8px;
-  }
-
-    
-
-  .ATE{
-    margin-top: -120px;
-      align-content: right;
-      text-align: right top;
-      border: 0.5px solid #fff transparent;
-      padding: 15px;
-      border-radius: 5px;
-      flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
-      box-sizing: content-box;
-      width: 30%;
-      position: relative; /* Ajouté pour positionner l'image par rapport à la box */
-      padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
-      background-color: #fff transparent;
-      padding-top: 10px;
-    }
-    .ATE p {
-    direction: rtl;
-    text-align: start;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8px;
-}
 .logo-container{
-    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    align-items: center;
     flex: 1; /* Permet au logo de prendre l'espace restant entre les deux textes */
-  text-align: center top; /* Centre le logo horizontalement */
+    text-align: center; /* Centre le logo horizontalement */
 }
-  .logo  {
-    max-width: 100%; /* S'assure que le logo ne dépasse pas la largeur de son conteneur */
-  max-height: 100%;
-  }
+.logo  {
+    max-width: 50%; /* S'assure que le logo ne dépasse pas la largeur de son conteneur */
+  max-height: 50%;
+}
 
 .galerie {
       display: flex;
@@ -129,19 +79,19 @@ body {
 
       .peinture p {
           margin-top: 0; /* Ajouté pour ajuster l'espace entre l'image et le texte à l'intérieur de la box */
-        margin-bottom: 1px;
-    }
+          margin-bottom: 1px;
+        }
+        
     
-    
-    .slider {
-        position: relative;
-        width: 100%;
+        .slider {
+            position: relative;
+            width: 100%;
         height: 100%;
         overflow: hidden; /* Cache les images qui dépassent du conteneur */
     }
     
-            .slide {
-                position: absolute;
+    .slide {
+        position: absolute;
                 top: 0;
               left: 0;
               width: 100%;
@@ -158,7 +108,7 @@ body {
         object-fit: cover; /* Ajuste l'image pour qu'elle couvre entièrement l'espace dédié */
         height: 310px; /* Hauteur fixe pour les images */
     }
-
+    
 .title{
     font-family: 'Poppins';
     font-weight: 300;
@@ -166,28 +116,49 @@ body {
     margin-top: -50px;
 }
   
-  .title p {
-      font-family: 'Poppins';
-      font-weight: 200;
-      font-size: 13px;
-    }
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
+.title p {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 13px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
       grid-template-areas: 
         "head head"
         "info-section info-section";
       gap: 20px;
     }
+    .head{
+       grid-area: head;
+    }
+    .header-popup {
+       display: none;
+     }
     
     
     .info-button {
-        float: right;
+        float: left;
         z-index: 1;
+        position: relative;
+        top: 0px;
+        right: 0;
+        left: -28px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 20px;
+        padding: 10px;
+        background-color: #88b04b;
+        color: white;
+        border: none;
+        cursor: pointer;
     }
     
-    
+    .popup-container {
+        display: none;
+      }
+      
 
     .header-popup {
         display: flex;

@@ -20,3 +20,11 @@ const close = document.querySelector('.close');
 close.addEventListener('click', () => {
   popup.style.display = 'none';
 });
+
+
+var infoButton = document.querySelector('.info-button');
+var headerPopup = document.querySelector('.header-popup');
+
+infoButton.addEventListener('click', function() {
+  headerPopup.style.display = 'block';
+});
