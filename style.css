@@ -98,7 +98,7 @@ body {
         width: 100%;
         height: 310px;
         object-fit: contain;
-        transition: transform 0.4s ease; /* Ajoute une transition pour l'effet de glissement */
+        transition: transform 0.4s  ease-in-out; /* Ajoute une transition pour l'effet de glissement */
     }
     
     
@@ -108,14 +108,32 @@ body {
         object-fit: cover; /* Ajuste l'image pour qu'elle couvre entièrement l'espace dédié */
         height: 310px; /* Hauteur fixe pour les images */
     }
+
+    .slide:nth-child(1) {
+        opacity: 1;
+    }
     
+    
+    .peinture:hover .slide:nth-child(2)
+
+    
+    .peinture:hover .slide:nth-child(3)
+    .peinture:hover .slide:nth-child(4),
+    .peinture:hover .slide:nth-child(5),
+    .peinture:hover .slide:nth-child(6),
+    .peinture:hover .slide:nth-child(7),
+    .peinture:hover .slide:nth-child(8),
+    .peinture:hover .slide:nth-child(9) {
+        opacity: 1;
+    }
+    
+    .peinture:hover .slide:nth-child(9){
+    transform: translateX(-100%); /* Déplace l'image vers la gauche lors du survol */
+}
     .peinture:hover .slides {
         animation: scroll 10s linear infinite;
     }
     
-            .peinture:hover .slide:nth-child(9){
-            transform: translateX(-100%); /* Déplace l'image vers la gauche lors du survol */
-    }
 .title{
     font-family: 'Poppins';
     font-weight: 300;
@@ -225,14 +243,18 @@ body {
     }
 }
 
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-200%); }
-}
-
-  
-  
-  
-  
-  
+keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
   

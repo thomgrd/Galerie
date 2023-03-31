@@ -30,10 +30,3 @@ infoButton.addEventListener('click', function() {
 });
 
 
-var slide2 = document.querySelector('.slide3');
-
-var Requiem = document.querySelector('.requiem');
-Requiem.addEventListener('mouseover', function() {
-  slide2.style.opacity = '1';
-});
-
