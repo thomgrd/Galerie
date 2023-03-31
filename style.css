@@ -198,6 +198,7 @@ body {
       display: flex; /* Utilisez Flexbox pour positionner les éléments */
       flex-direction: column; /* Changez l'orientation des éléments en colonne */
       align-items: center; /* Centrez les éléments horizontalement */
+        padding: 10px 0;
     }
   
     .header .AT,
@@ -207,5 +208,6 @@ body {
       text-align: center; /* Centre le texte */
       margin: 10px 0; /* Ajoute des marges autour des éléments pour les séparer */
       width: 100%; /* Permet aux éléments de prendre toute la largeur */
+        overflow: visible;
     }
   }
