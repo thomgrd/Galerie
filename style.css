@@ -195,19 +195,26 @@ body {
 
 @media (max-width: 768px) {
     .header {
-      display: flex; /* Utilisez Flexbox pour positionner les éléments */
-      flex-direction: column; /* Changez l'orientation des éléments en colonne */
-      align-items: center; /* Centrez les éléments horizontalement */
-        padding: 70px 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 70px 0 10px; /* Ajustez la marge supérieure pour éviter le chevauchement */
     }
   
     .header .AT,
     .header .ATE {
-      position: static; /* Réinitialise la position pour éviter le chevauchement */
-      display: block; /* Change display à block pour prendre toute la largeur */
-      text-align: center; /* Centre le texte */
-      margin: 10px 0; /* Ajoute des marges autour des éléments pour les séparer */
-      width: 100%; /* Permet aux éléments de prendre toute la largeur */
-        overflow: visible;
+      position: static;
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+      width: 100%;
+      overflow: visible; /* Ajoutez cette propriété pour rendre le texte entièrement visible */
     }
-  }
+}
+
+  
+  
+  
+  
+  
+  
