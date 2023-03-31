@@ -83,7 +83,7 @@ body {
         }
         
     
-        .sliders {
+        .previews {
             box-shadow: 10px 5px 5px #cecece;
             position: relative;
             width: 100%;
@@ -102,30 +102,65 @@ body {
     }
     
     
-    .sliders img {
+    .previews img {
         max-width: 100%;
         border-radius: 5px;
         object-fit: cover; /* Ajuste l'image pour qu'elle couvre entièrement l'espace dédié */
         height: 310px; /* Hauteur fixe pour les images */
     }
 
-    .slide:nth-child(1) {
+    .peinture:hover .previews {
+        height: 100%;
+      }
+      
+      .peinture:hover .previews img {
+        height: 100%;
         opacity: 1;
-    }
-    
-    
-    .peinture:hover .slide:nth-child(2)
-
-    
-    .peinture:hover .slide:nth-child(3)
-    .peinture:hover .slide:nth-child(4),
-    .peinture:hover .slide:nth-child(5),
-    .peinture:hover .slide:nth-child(6),
-    .peinture:hover .slide:nth-child(7),
-    .peinture:hover .slide:nth-child(8),
-    .peinture:hover .slide:nth-child(9) {
-        opacity: 1;
-    }
+      }
+      
+      .peinture:hover .previews img:not(:first-child) {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+      
+      .peinture:hover .previews img:nth-child(2) {
+        right: 0;
+        animation: scroll 10s linear infinite;
+      }
+      
+      .peinture:hover .previews img:nth-child(3) {
+        right: 12.5%;
+        animation: scroll 10s linear infinite;
+      }
+      
+      .peinture:hover .previews img:nth-child(4) {
+        left: 25%;
+        animation: scroll 10s linear infinite;
+      }
+      
+      .peinture:hover .previews img:nth-child(5) {
+        left: 37.5%;
+      }
+      
+      .peinture:hover .previews img:nth-child(6) {
+        left: 50%;
+      }
+      
+      .peinture:hover .previews img:nth-child(7) {
+        left: 62.5%;
+      }
+      
+      .peinture:hover .previews img:nth-child(8) {
+        left: 75%;
+      }
+      
+      .peinture:hover .previews img:nth-child(9) {
+        left: 87.5%;
+      }
     
     .peinture:hover .slide:nth-child(9){
     transform: translateX(-100%); /* Déplace l'image vers la gauche lors du survol */
