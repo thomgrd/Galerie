@@ -29,3 +29,11 @@ infoButton.addEventListener('click', function() {
   headerPopup.style.display = 'block';
 });
 
+
+var slide2 = document.querySelector('.slide3');
+
+var Requiem = document.querySelector('.requiem');
+Requiem.addEventListener('mouseover', function() {
+  slide2.style.opacity = '1';
+});
+
