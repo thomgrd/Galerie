@@ -201,7 +201,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 70px 0 10px; /* Ajustez la marge supérieure pour éviter le chevauchement */
+      padding: 70px 0 10px;
     }
   
     .header .AT,
@@ -209,11 +209,12 @@ body {
       position: static;
       display: block;
       text-align: center;
-      margin: 10px 0;
+      margin: 10px 0 30px; /* Ajustez la marge inférieure pour redescendre le texte */
       width: 100%;
-      overflow: visible; /* Ajoutez cette propriété pour rendre le texte entièrement visible */
+      overflow: visible;
     }
-}
+  }
+  
 
   
   
