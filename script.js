@@ -1,5 +1,5 @@
 // Sélectionnez le bouton et la div pour le pop-up
-const button = document.querySelector('.header-button');
+const button = document.querySelector('.info-button');
 const popup = document.querySelector('#header-popup');
 
 // Ajoutez un événement click pour afficher le pop-up
