@@ -186,8 +186,8 @@ body {
 
 
 @media (max-width: 768px) {
-    .AT,
-    .ATE {
+    .header .AT,
+    .header .ATE {
       position: static; /* Réinitialise la position pour éviter le chevauchement */
       display: block; /* Force les éléments à occuper toute la largeur disponible */
       text-align: center; /* Centre le texte */
