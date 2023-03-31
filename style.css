@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -165,6 +164,7 @@ body {
       font-weight: 200;
       font-size: 13px;
     }
+
     /* Media queries pour une mise en page réactive */
     @media (max-width: 1200px) {
         .peinture {
@@ -183,3 +183,14 @@ body {
         flex: 0 0 100%;
     }
 }
+
+
+@media (max-width: 768px) {
+    .AT,
+    .ATE {
+      position: static; /* Réinitialise la position pour éviter le chevauchement */
+      display: block; /* Force les éléments à occuper toute la largeur disponible */
+      text-align: center; /* Centre le texte */
+      margin-top: 10px; /* Ajoute une marge supérieure pour séparer le texte du h2 */
+    }
+  }
