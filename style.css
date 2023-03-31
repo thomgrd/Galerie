@@ -44,8 +44,6 @@ body {
     width: 100%; /* Prend toute la largeur de la page */
     padding: 0px; /* Ajoute un padding à l'intérieur pour donner de l'espace au contenu */
     z-index: -1; /* Ajoutez cette propriété pour placer les éléments en arrière-plan */
-    
-      
 }
 
 
@@ -211,7 +209,6 @@ body {
       text-align: center;
       margin: 10px 0 30px; /* Ajustez la marge inférieure pour redescendre le texte */
       width: 100%;
-      overflow: visible;
     }
   }
   
