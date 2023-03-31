@@ -8,6 +8,7 @@ body {
   }
   
   h2 {
+    box-sizing: border-box;
     margin-top: -70px;
     text-align: center;
     background-color: #f1f1f1;
@@ -42,11 +43,14 @@ body {
     padding: 5px;
     border-radius: 5px;
     flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 30%;
-    position: relative; /* Ajouté pour positionner l'image par rapport à la box */
+    position: relative absolute; /* Ajouté pour positionner l'image par rapport à la box */
     padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
     background-color: #fff transparent;
+    flex: 0 0 calc(20% - 50px);
+    padding-top: auto;
+    padding-bottom: auto;
 }
 .AT p {
     direction: ltr;
@@ -67,11 +71,14 @@ body {
       padding: 5px;
       border-radius: 5px;
       flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
-      box-sizing: border-box;
+      box-sizing: content-box;
       width: 30%;
-      position: relative; /* Ajouté pour positionner l'image par rapport à la box */
+      position: relative absolute; /* Ajouté pour positionner l'image par rapport à la box */
       padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
       background-color: #fff transparent;
+      flex: 0 0 calc(20% - 50px);
+      padding-top: auto;
+      padding-bottom: auto;
     }
     .ATE p {
     direction: rtl;
@@ -150,6 +157,7 @@ body {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 25px;
+    margin-top: -50px;
 }
   
   .title p {
