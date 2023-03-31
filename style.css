@@ -7,6 +7,11 @@ body {
   }
   
   h2 {
+    text-align: center;
+    background-color: rgba(47, 47, 47, 0.95);
+    color: black;
+    padding: 1px;
+    margin-bottom: 0px; /* Ajoute une marge inférieure pour créer de l'espace entre le h2 et les éléments en dessous */
     box-sizing: border-box;
     margin-top: -70px;
     text-align: center;
@@ -33,6 +38,13 @@ body {
         justify-content: space-between;
         align-items: center;
 }
+
+.header {
+    position: relative;
+    width: 100%; /* Prend toute la largeur de la page */
+    padding: 0px; /* Ajoute un padding à l'intérieur pour donner de l'espace au contenu */
+  }
+  
 
 .AT{
     margin-top: -110px;
