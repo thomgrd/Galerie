@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,18 +9,28 @@ body {
   
   h1 {
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #fff;
     padding: 20px;
+    font-family: 'Poppins';
+    font-weight: 500;
   }
 
   h2 {
     text-align: center;
     background-color: #f1f1f1;
     padding: 20px;
+    font-family: 'Poppins';
+    font-weight: 200;
+  }
+
+  p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 200;
   }
   
   .galerie {
-      display: flexbox;
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
@@ -25,13 +38,17 @@ body {
     }
     
     .peinture {
-        border: 1px solid #ccc;
-        padding: 10px;
+        border: 0.5px solid black;
+        padding: 5px;
         border-radius: 5px;
         text-align: center;
-        /*flex: 0 0 calc(25% - 20px); /* Ajuste la taille des éléments de la galerie */
+        flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
         box-sizing: border-box;
-        margin-bottom: 20px;
+        width: 70%;
+        position: relative; /* Ajouté pour positionner l'image par rapport à la box */
+        padding-bottom: 10%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
+        margin-bottom: 2px;
+        background-color: #eeeeee;
     }
     
   .peinture img {
@@ -39,7 +56,7 @@ body {
     height: auto;
     border-radius: 5px;
     object-fit: cover; /* Ajuste l'image pour qu'elle couvre entièrement l'espace dédié */
-    height: 300px; /* Hauteur fixe pour les images */
+    height: 310px; /* Hauteur fixe pour les images */
   }
   
 /* Media queries pour une mise en page réactive */
