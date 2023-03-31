@@ -28,3 +28,4 @@ var headerPopup = document.querySelector('.header-popup');
 infoButton.addEventListener('click', function() {
   headerPopup.style.display = 'block';
 });
+
