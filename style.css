@@ -44,24 +44,22 @@ body {
     width: 100%; /* Prend toute la largeur de la page */
     padding: 0px; /* Ajoute un padding à l'intérieur pour donner de l'espace au contenu */
   }
-  
+
 
 .AT{
-    margin-top: -110px;
+    margin-top: -100px;
     align-content: left;
     text-align: left top;
     border: 0.5px solid #fff transparent;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
     box-sizing: content-box;
     width: 30%;
-    position: relative absolute; /* Ajouté pour positionner l'image par rapport à la box */
+    position: relative ; /* Ajouté pour positionner l'image par rapport à la box */
     padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
     background-color: #fff transparent;
-    flex: 0 0 calc(20% - 50px);
-    padding-top: auto;
-    padding-bottom: auto;
+    padding-top: 10px;
 }
 .AT p {
     direction: ltr;
@@ -69,7 +67,7 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
+    font-size: 10px;
   }
 
     
@@ -79,17 +77,15 @@ body {
       align-content: right;
       text-align: right top;
       border: 0.5px solid #fff transparent;
-      padding: 5px;
+      padding: 15px;
       border-radius: 5px;
       flex: 0 0 calc(20% - 15px); /* Ajuste la taille des éléments de la galerie */
       box-sizing: content-box;
       width: 30%;
-      position: relative absolute; /* Ajouté pour positionner l'image par rapport à la box */
+      position: relative; /* Ajouté pour positionner l'image par rapport à la box */
       padding-bottom: 0%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
       background-color: #fff transparent;
-      flex: 0 0 calc(20% - 50px);
-      padding-top: auto;
-      padding-bottom: auto;
+      padding-top: 10px;
     }
     .ATE p {
     direction: rtl;
@@ -97,10 +93,10 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
+    font-size: 10px;
 }
 .logo-container{
-    margin-top: -150px;
+    margin-top: -140px;
     flex: 1; /* Permet au logo de prendre l'espace restant entre les deux textes */
   text-align: center top; /* Centre le logo horizontalement */
 }
@@ -200,9 +196,10 @@ body {
 @media (max-width: 768px) {
     .header .AT,
     .header .ATE {
-      position: static; /* Réinitialise la position pour éviter le chevauchement */
-      display: block; /* Force les éléments à occuper toute la largeur disponible */
-      text-align: center; /* Centre le texte */
-      margin-top: 10px; /* Ajoute une marge supérieure pour séparer le texte du h2 */
+        position: static; /* Réinitialise la position pour éviter le chevauchement */
+        display: inline-block; /* Change display à inline-block pour préserver la largeur du contenu */
+        text-align: center; /* Centre le texte */
+        margin: 10px 5px; /* Ajoute des marges autour des éléments pour les séparer */
+        width: auto; /* Permet aux éléments de prendre la largeur de leur contenu */
     }
   }
