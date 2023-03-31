@@ -195,6 +195,15 @@ body {
 
 
 @media (max-width: 768px) {
+
+    .header-text {
+        font-size: 0.8rem; /* Ajustez la taille de police pour que le texte s'affiche correctement */
+        margin: 10px 0 30px; /* Ajustez les marges pour que le texte soit entièrement visible */
+        text-align: center;
+        width: 100%;
+        overflow: visible;
+    }
+
     .header {
       display: flex;
       flex-direction: column;
