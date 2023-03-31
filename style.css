@@ -180,21 +180,11 @@ body {
         "info-section info-section";
       gap: 20px;
     }
-    .info-section {
-      grid-area: info-section;
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 999;
-      padding: 20px;
-      background-color: white;
-      border: 1px solid black;
-    }
+    
     
     .info-button {
         float: right;
+        z-index: 1;
     }
     
     
