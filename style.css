@@ -27,6 +27,7 @@ body {
       font-family: 'Poppins';
       font-weight: 200;
     }
+
     .container{
         display: flex;
         justify-content: space-between;
@@ -109,6 +110,8 @@ body {
         position: relative; /* Ajouté pour positionner l'image par rapport à la box */
         padding-bottom: 2%; /* Ajouté pour déterminer la hauteur de la box en fonction de la largeur */
         background-color: #eeeeee transparent;
+        /* Modifiez la hauteur pour qu'elle soit plus grande */
+        height: 400px;
     }
 
       .peinture p {
@@ -130,7 +133,7 @@ body {
               left: 0;
               width: 100%;
               height: 310px;
-              object-fit: cover;
+              object-fit: contain;
               transition: transform 0.5s; /* Ajoute une transition pour l'effet de glissement */
             }
             .peinture:hover .slide:nth-child(2){
