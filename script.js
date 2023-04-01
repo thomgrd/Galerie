@@ -1,6 +1,13 @@
+const element = document.querySelector('.peinture');
+const slides = document.querySelectorAll('.slide');
+const navs = document.querySelectorAll('.nav');
+let index = 0;
+
+
 // Sélectionnez le bouton et la div pour le pop-up
 const button = document.querySelector('.info-button');
 const popup = document.querySelector('#header-popup');
+
 
 // Ajoutez un événement click pour afficher le pop-up
 button.addEventListener('click', () => {
@@ -28,5 +35,11 @@ var headerPopup = document.querySelector('.header-popup');
 infoButton.addEventListener('click', function() {
   headerPopup.style.display = 'block';
 });
+
+
+
+
+
+
 
 
