@@ -3,7 +3,6 @@ const slides = document.querySelectorAll('.slide');
 const navs = document.querySelectorAll('.nav');
 let index = 0;
 
-
 // Sélectionnez le bouton et la div pour le pop-up
 const button = document.querySelector('.info-button');
 const popup = document.querySelector('#header-popup');
@@ -29,17 +28,9 @@ close.addEventListener('click', () => {
 });
 
 
-var infoButton = document.querySelector('.info-button');
-var headerPopup = document.querySelector('.header-popup');
+let infoButton = document.querySelector('.info-button');
+let headerPopup = document.querySelector('.header-popup');
 
 infoButton.addEventListener('click', function() {
   headerPopup.style.display = 'block';
 });
-
-
-
-
-
-
-
-
